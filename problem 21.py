@@ -19,13 +19,9 @@ Then, the output of the program should be:
 
 """
 
-vert = 0
-horiz = 0
-
-
 def move(up, down, left, right):
-	global vert, horiz
-	print(up, down, left, right)
+	vert = 0
+	horiz = 0
 	vert = vert + up - down
 	horiz = horiz + left - right
 	distance = (vert ** 2 + horiz ** 2) ** 0.5
@@ -33,3 +29,12 @@ def move(up, down, left, right):
 
 
 print(move(5, 3, 3, 2))
+print(move(1, 0, 1, 0))
+
+"""
+zero = 0, 0
+start = 2, 3
+first = 5, 6
+distance0 = (2-0), (3-0)
+distance1 = (5-2), (6-3)
+"""
